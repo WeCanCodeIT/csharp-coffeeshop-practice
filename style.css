@@ -1,17 +1,46 @@
 body {
     max-width: 70vw;
     min-width: 150px;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    background-color: rgb(255, 179, 121);
+}
+
+h1{
+    font-family: 'Righteous', cursive;
+    padding: .5em;
+    background-image: url(images/coffe-beans.jfif);
+    color: burlywood;
+    text-align: center;
+}
+
+nav {
+    background-color: brown;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav a {
+    margin: .5em 0;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 50px;
 }
 
 section {
     background-color: burlywood;
     margin: 1em 0;
+    padding: .5em;
+}
+
+section, h1 {
+    border: 3px solid black;
 }
 
 #menu {
@@ -26,9 +55,19 @@ section {
 article {
     color: #fffdd0;
     border-style: double;
+    border-color: brown;
+    border-width: 2px;
     border-radius: 1em;
     background-color: #6f4e37;
     padding: .5em;
     margin: .5em;
     
+}
+
+i {
+    color: burlywood;
+}
+
+i:hover {
+    color: rgb(37, 4, 4);
 }
